@@ -1,0 +1,19 @@
+// Pymon Game Class Diagram
+digraph {
+	InvalidDirectionException [label="InvalidDirectionException|{direction\lmessage\l}|{__init__\l}" shape=record]
+	InvalidInputFileFormat [label="InvalidInputFileFormat|{filename\lmessage\l}|{__init__\l}" shape=record]
+	Item [label="Item|{name\ldescription\lpickable\lconsumable\llocation\lstatus\l}|{__init__\lget_description\l}" shape=record]
+	Location [label="Location|{name\ldescription\ldoors\lcreatures\litems\l}|{__init__\ladd_item\lremove_item\lconnect\ladd_creature\lremove_creature\lget_description\l}" shape=record]
+	Creature [label="Creature|{nickname\ldescription\llocation\ladoptable\lstatus\l}|{__init__\lget_description\l}" shape=record]
+	BattleRecord [label="BattleRecord|{timestamp\lopponent\lwins\ldraws\llosses\l}|{__init__\l__str__\l}" shape=record]
+	Pymon [label="Pymon|{energy\linventory\lcaptured_pymons\lcurrent_immunity\lbattle_stats\lmoves_count\lbattle_history\l}|{__init__\lpick_item\lchallenge_creature\luse_binocular\lrandom_move_after_loss\lcapture_pymon\lswitch_active_pymon\lmove\luse_item\lget_description\lgenerate_stats\l}" shape=record]
+	Record [label="Record|{locations\lcreatures\litems\l}|{__init__\limport_creatures\limport_items\lvalidate_csv_format\lload_locations\lload_creatures\lload_items\l_setup_default_items\lsetup_pass_level\l}" shape=record]
+	Operation [label="Operation|{current_pymon\lrecord\l}|{__init__\lstart_game\lgame_loop\lhandle_menu\lhandle_admin_menu\lhandle_challenge\lhandle_movement\lhandle_item_pickup\lview_inventory\lhandle_pymon_switch\ldisplay_menu\lhandle_inspect_pymon\ladd_custom_location\lsave_game\lload_game\l}" shape=record]
+	Pymon -> Item [label=uses]
+	Location -> Creature [label=contains]
+	Operation -> Record [label=manages]
+	Creature -> BattleRecord [label=records]
+	Record -> Location [label=stores]
+	Record -> Item [label=contains]
+	Record -> Creature [label=contains]
+}
