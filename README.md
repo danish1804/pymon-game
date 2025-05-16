@@ -1,14 +1,33 @@
-# 🐍 Pymon Game
+# 🐍 Pymon Game – A Python-Based Creature Battle Adventure
 
-Pymon is a terminal-based, turn-based creature capture and battle game written in Python. Inspired by Pokémon, players can explore locations, collect items, encounter wild creatures, and battle using turn-based combat.
+**Pymon** is a terminal-based, turn-based creature capture and battle game written in Python. Inspired by Pokémon, the game allows players to explore locations, encounter wild creatures (Pymons), collect items, and engage in strategic battles — all through a modular, object-oriented design.
 
-## 🎮 Features
+This project was developed as part of an academic assignment to demonstrate proficiency in OOP, file handling, modular design, and menu-driven CLI interfaces.
 
-- Explore a map with multiple locations
-- Encounter wild Pymons and catch them
-- Use items like potions or capture tools
-- Fight using a turn-based battle system
-- Load creatures, items, and locations from CSV files
+---
+
+## 🏷️ Badges
+
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![OOP](https://img.shields.io/badge/Design-OOP-informational)
+![Gameplay](https://img.shields.io/badge/Game-Type%3A%20Turn--Based%20Battle-green)
+![Persistence](https://img.shields.io/badge/Data-CSV--Driven-success)
+![Interface](https://img.shields.io/badge/Interface-CLI-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Project Type](https://img.shields.io/badge/Type-Academic--Assignment-blueviolet)
+
+---
+
+## 🎮 Game Features
+
+- 🔍 **Explore Locations**: Move through connected regions with unique creatures and items
+- 🐾 **Encounter Wild Pymons**: Randomly find creatures based on location
+- ⚔️ **Battle System**: Turn-based battles with basic stat-driven logic (attack, HP, type)
+- 🎒 **Item Usage**: Use healing items, buffing items, or capture items from your inventory
+- 🧩 **Modular Design**: Easily extendable classes for Pymon, Items, Locations, and more
+- 💾 **CSV Data Files**: All game content loaded dynamically from external CSVs
+
+---
 
 ## 📂 Requirements
 
