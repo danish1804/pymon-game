@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Environment variables
+.env
+*.env
+
+# System/IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Game save data (optional)
+savegame.json
+*.log
+
